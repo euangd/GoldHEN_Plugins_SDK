@@ -88,6 +88,8 @@ $(INTDIR)/%.o.stub: $(PROJDIR)/%.cpp
 
 all: clean crt $(TARGETSTATIC)
 
+#
+
 clean:
 	rm -rf $(TARGET) $(TARGETSTUB) $(INTDIR) $(OBJS) $(TARGETCRT) $(TARGETSTATIC)
 
