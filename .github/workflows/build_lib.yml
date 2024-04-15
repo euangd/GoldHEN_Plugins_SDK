@@ -35,14 +35,14 @@ jobs:
         make clean
         make install
         echo "GOLDHEN_SDK=$GITHUB_WORKSPACE/OpenOrbis/PS4Toolchain" >> $GITHUB_ENV
-        zip -r /sdk.zip $GITHUB_WORKSPACE/OpenOrbis/PS4Toolchain
+        zip -r /home/runner/sdk.zip /home/runner/work/GoldHEN_Plugins_SDK/GoldHEN_Plugins_SDK/OpenOrbis
     
     -  name: Upload a Build Artifact
        uses: actions/upload-artifact@v4.3.1
        with: 
         name: GoldHen
     # A file, directory or wildcard pattern that describes what to upload
-        path: /sdk.zip
+        path: /home/runner/sdk.zip
     # The desired behavior if no files are found using the provided path.
 
           
