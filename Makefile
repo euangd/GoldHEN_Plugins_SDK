@@ -91,7 +91,7 @@ all: clean crt $(TARGETSTATIC)
 #
 
 clean:
-	rm -rf $(TARGET) $(TARGETSTUB) $(INTDIR) $(OBJS) $(TARGETCRT) $(TARGETSTATIC)
+	echo "hello"
 
 crt:
 	@mkdir build
